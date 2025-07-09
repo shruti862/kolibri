@@ -119,17 +119,7 @@
                   },
                 },
               },
-              onShow: () => {
-    
-    this.$nextTick(() => {
-      const btn = instance.$refs.continueButton?.$el || instance.$refs.continueButton;
-      console.log(btn);
-      if (btn && typeof btn.focus === 'function') {
-        btn.focus();
-      }
-    });
-  },
-         
+              
             });
 
             if (this.tippyInstance?.show) {

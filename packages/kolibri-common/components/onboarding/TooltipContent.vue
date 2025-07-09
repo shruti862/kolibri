@@ -62,14 +62,14 @@ export default {
     currentStepIndex: Number,
   },
  mounted() {  
-  /* this.$nextTick(() => {
+   this.$nextTick(() => {
     setTimeout(() => {
         if(this.$refs.continueButton){
             this.$refs.continueButton.$el.focus();
          console.log("continueButton1:",  this.$refs.continueButton.$el);
         }
     }, 0);
-  });*/
+  });
 
   this.focusTrapHandler = (e) => {
     if (e.key !== "Tab" && e.key !== "Escape") return;
